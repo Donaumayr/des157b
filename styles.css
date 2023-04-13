@@ -20,24 +20,24 @@ body.switch {
 
 @keyframes bodyani {
     0% {}
-    30% {background: rgb(28,28,28);
-        background: linear-gradient(0deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
-    60% {background: rgb(28,28,28);
-        background: linear-gradient(0deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
+    30% {background: rgb(19, 19, 19);
+        background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0,0,0,1) 100%);}
+    60% {background: rgb(19, 19, 19);
+        background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0,0,0,1) 100%);}
     65% {background: rgb(48, 48, 48);
-        background: linear-gradient(0deg, rgb(54, 53, 53) 0%, rgb(20, 20, 20) 100%);}
+        background: linear-gradient(180deg, rgb(54, 53, 53) 0%, rgb(20, 20, 20) 100%);}
     75% {background: rgb(28,28,28);
-        background: linear-gradient(0deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
+        background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
     80% {background: rgb(48, 48, 48);
-        background: linear-gradient(0deg, rgb(54, 53, 53) 0%, rgb(20, 20, 20) 100%);}
+        background: linear-gradient(180deg, rgb(54, 53, 53) 0%, rgb(20, 20, 20) 100%);}
     90% {background: rgb(28,28,28);
-        background: linear-gradient(0deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
+        background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
     93% {background: rgb(48, 48, 48);
-        background: linear-gradient(0deg, rgb(54, 53, 53) 0%, rgb(20, 20, 20) 100%);}
+        background: linear-gradient(180deg, rgb(54, 53, 53) 0%, rgb(20, 20, 20) 100%);}
     96% {background: rgb(28,28,28);
-        background: linear-gradient(0deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
+        background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(0,0,0,1) 100%);}
     100% {background: rgb(68, 68, 68);
-        background: linear-gradient(0deg, rgb(56, 56, 56) 0%, rgb(0, 0, 0) 100%);}
+        background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(0, 0, 0) 100%);}
 }
 
 #container {
