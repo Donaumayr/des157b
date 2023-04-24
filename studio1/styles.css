@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#myVideo {
+    position: fixed;
+    bottom: 0;
+    min-height: 100%;
+    animation: tilt 14s forwards;
+}
+
+@keyframes tilt {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(0deg);}
+    41% {transform: rotate(5deg);}
+    /*42% {transform:rotate(6deg)}
+    43% {transform:rotate(7deg)}
+    47% {transform: rotate(20deg);}*/
+    /*50% {transform: rotate(22deg);}*/
+    /*55% {transform: rotate(25deg);}*/
+    60% {transform: rotate(36deg);}
+    75% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    z-index: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section h1 {
+    font-size: 4em;
+    white-space: nowrap;
+    color: white;
+    margin-top: 170px;
+    animation: expand 11s ease-in-out forwards;
+}
+
+@keyframes expand {
+    0% {width:0px;}
+    100% {width:4230px;}
+}
+
+h1 span {
+    font-size: 1em;
+    animation: end 14s ease-out forwards;
+}
+
+@keyframes end {
+    0% {font-size: 1em;}
+    75% {font-size: 1em;}
+    100% {font-size: 1.5em;}
+}
+
+h1 span:hover {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@keyframes final {
+
+}
