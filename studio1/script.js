@@ -4,6 +4,10 @@
     const s = document.querySelector('span');
     const sec = document.querySelector('section');
     const v = document.querySelector('.myVideo');
+    const loading = document.querySelector('.fa-bicycle');
+    v.addEventListener('playing', function(){
+        loading.style.display = 'none';
+    });
     s.addEventListener('mouseover', function(){
         m.className = 'blacken';
         v.className = 'myVideo darken';

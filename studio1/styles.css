@@ -18,6 +18,7 @@ main {
     position: fixed;
     bottom: 0;
     min-height: 100%;
+    object-fit: contain;
     animation: tilt 14s forwards;
 }
 
@@ -85,7 +86,7 @@ h1 span {
 
 @keyframes darkani {
     0% {opacity:1}
-    100% {opacity:0.3}
+    100% {opacity:0.3; filter:grayscale(100%);}
 }
 
 @keyframes end {
@@ -99,6 +100,18 @@ h1 span:hover {
     cursor: pointer;
 }
 
-@keyframes final {
+.fa-bicycle {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-size: 100px;
+    color: rgb(15, 101, 176);
+    transform: translate(-50%, -50%);
+    animation: bike 2s ease-in-out infinite;
+}
 
+@keyframes bike {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
 }
