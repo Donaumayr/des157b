@@ -5,7 +5,16 @@ main {
     min-height: 100vh;
 }
 
-#myVideo {
+.blacken {
+    animation: black 2s ease-out forwards;
+}
+
+@keyframes black {
+    0% {background-color: white;}
+    100% {background-color: black;}
+}
+
+.myVideo {
     position: fixed;
     bottom: 0;
     min-height: 100%;
@@ -14,23 +23,22 @@ main {
 
 @keyframes tilt {
     0% {transform: rotate(0deg);}
-    30% {transform: rotate(0deg);}
-    41% {transform: rotate(5deg);}
-    /*42% {transform:rotate(6deg)}
-    43% {transform:rotate(7deg)}
-    47% {transform: rotate(20deg);}*/
-    /*50% {transform: rotate(22deg);}*/
-    /*55% {transform: rotate(25deg);}*/
-    60% {transform: rotate(36deg);}
+    32% {transform: rotate(0deg);}
+    60% {transform: rotate(90deg);}
     75% {transform: rotate(0deg);}
     100% {transform: rotate(0deg);}
+}
+
+section div {
+    background-color: white;
+    height: 100vh;
 }
 
 section {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 40%;
+    width: 60%;
     z-index: 1;
     min-height: 100vh;
     align-items: center;
@@ -52,8 +60,32 @@ section h1 {
 }
 
 h1 span {
-    font-size: 1em;
-    animation: end 14s ease-out forwards;
+    font-size: 1.5em;
+    animation: end 11s ease-out forwards;
+}
+
+.change {
+    animation: move 6s ease-out infinite;
+}
+
+@keyframes move {
+    0% {color:white; font-size: 1.5em;}
+    20% {color:violet; font-size: 1.5em;}
+    40% {color:lightseagreen; font-size: 1.5em;}
+    60% {color:lightgreen; font-size: 1.5em;}
+    75% {color:rgb(222, 118, 13); font-size: 1.5em;}
+    85% {color:rgb(183, 10, 79); font-size: 1.5em;}
+    100% {color:white; font-size: 1.5em;}
+
+}
+
+.darken {
+    animation: darkani 3s ease-out forwards;
+}
+
+@keyframes darkani {
+    0% {opacity:1}
+    100% {opacity:0.3}
 }
 
 @keyframes end {
