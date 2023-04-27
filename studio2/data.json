@@ -1,0 +1,44 @@
+{
+    "MON" : [
+        {
+            "App" : "Discord",
+            "Hours" : "1"
+        }
+    ],
+    "TUE" : [
+        {
+            "App" : "Chrome",
+            "Hours" : "2"
+        }
+    ],
+    "WED" : [
+        {
+            "App" : "Discord",
+            "Hours" : "1"
+        }
+    ],
+    "THU" : [
+        {
+            "App" : "Discord",
+            "Hours" : "2"
+        }
+    ],
+    "FRI" : [
+        {
+            "App" : "Instagram",
+            "Hours" : "1"
+        }
+    ],
+    "SAT" : [
+        {
+            "App" : "YouTube",
+            "Hours" : "1"
+        }
+    ],
+    "SUN" : [
+        {
+            "App" : "Reddit",
+            "Hours" : "2"
+        }
+    ]
+}
