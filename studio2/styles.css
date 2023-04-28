@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    width:500px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.discord {
+    background: rgb(9,17,47);
+    background: linear-gradient(0deg, rgba(9,17,47,1) 0%, rgba(114,137,218,1) 100%);
+}
+
+section {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+img {
+    width: 320px;
+    height: 320px;
+}

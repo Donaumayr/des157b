@@ -1,0 +1,42 @@
+{
+    "mon" : {
+        "app" : "Discord",
+        "hours" : "1.5",
+        "minutes" : "0"
+    },
+    "tue" : {
+        "app" : "Chrome",
+        "hours" : "2",
+        "minutes" : "0"
+    },
+    "wed" : {
+        "app" : "Discord",
+        "hours" : "0",
+        "minutes" : "52"
+    },
+    "thu" : {
+        "app" : "Reddit",
+        "hours" : "1.5",
+        "minutes" : "0"
+    },
+    "fri" : {
+        "app" : "Instagram",
+        "hours" : "0",
+        "minutes" : "35"
+    },
+    "sat" : {
+        "app" : "YouTube",
+        "hours" : "0",
+        "minutes" : "43"
+    },
+    "sun" : {
+        "app" : "Reddit",
+        "hours" : "1",
+        "minutes" : "0"
+    },
+    "week" : {
+        "app" : "Discord",
+        "hours" : "2.5",
+        "minutes" : "0"
+    }
+}
