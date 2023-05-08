@@ -1,20 +1,24 @@
 body {
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
-    width:500px;
+    width:700px;
+    height: 100px;
     justify-content: space-between;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 h3 {
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 300;
-    letter-spacing: 0.1em;
+    font-weight: 400;
+    letter-spacing: 0.15em;
 }
 
 .discord {
@@ -22,24 +26,70 @@ h3 {
     background: linear-gradient(0deg, rgba(9,17,47,1) 0%, rgba(114,137,218,1) 100%);
 }
 
-section {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+.reddit {
+    background: rgb(255,69,0);
+    background: linear-gradient(180deg, rgba(255,69,0,1) 0%, rgba(71,20,1,1) 100%);
 }
-section div {
+
+.instagram {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.youtube {
+    background: rgb(116,23,23);
+    background: linear-gradient(0deg, rgba(116,23,23,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+.chrome {
+    background: rgb(66,133,244);
+    background: linear-gradient(180deg, rgba(66,133,244,1) 0%, rgba(11,23,42,1) 100%);
+}
+main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: calc(100vh - 100px);
+}
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 h2 {
-    color: white;
-    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
     font-size: 2em;
-    margin-bottom: 50px;
+    margin-top: 60px;
 }
 img {
     width: 320px;
     height: 320px;
+    margin-left:60px;
+    margin-right: 60px;
+    animation: fadein 1.5s ease-out forwards;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+main section div {
+    overflow: hidden;
+    animation: expand 5s ease-out forwards;
+}
+
+@keyframes expand {
+    0% {width: 0px;}
+    20% {width: 0px;}
+    100% {width: 100%;}
 }
