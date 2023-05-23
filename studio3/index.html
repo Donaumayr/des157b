@@ -4,35 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gallery Library-->
+    <link rel="stylesheet" href="imagerow.js-master/css/imagerow.css">
+    <script src="imagerow.js-master/dist/imagerow.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
-    <!-- nanogallery-->
-    <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <!-- Animate on Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Tinos:wght@400;700&family=Gelasio:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-        <div id="nanogallery2"
-
-            data-nanogallery2 = '{
-                "thumbnailHeight": 150,
-                "thumbnailWidth": 150,
-                "itemsBaseURL": "https://nanogallery2.nanostudio.org/samples/"
-            }'>
-
-            <!-- gallery content -->
-            <a href = "berlin1.jpg"   data-ngThumb = "berlin1_t.jpg" > Berlin 1 </a>
-            <a href = "berlin2.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 2 </a>
-            <a href = "berlin3.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 3 </a>
+    <header>
+        <h1>Davis, CA</h1>
+        <div id="highlight">
+            <div class="line"></div>
+            <h2>Bicyclists</h2>
+            <div class="line"></div>
         </div>
-
+    </header>
+    <main>
+        <section id="lightbox">
+            <div id="previous"></div>
+            <div id="current"></div>
+            <div id="next"></div>
+        </section>
+        <section class="image-row hidden">
+            <img class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
+            <img class="gimg" id="img2" src="images/bike2.jpg" alt="bike">
+            <img class="gimg" id="img3" src="images/bike3.jpg" alt="bike">
+        </section>
+        <section class="image-row hidden">
+            <img class="gimg" id="img4" src="images/bike4.jpg" alt="bike">
+            <img class="gimg" id="img5" src="images/bike5.jpg" alt="bike">
+            <img class="gimg" id="img6" src="images/bike6.jpg" alt="bike">
+            <img class="gimg" id="img7" src="images/bike7.jpg" alt="bike">
+        </section>
+        <section class="image-row hidden">
+            <img class="gimg" id="img8" src="images/bike8.jpg" alt="bike">
+            <img class="gimg" id="img9" src="images/bike9.jpg" alt="bike">
+            <img class="gimg" id="img10" src="images/bike10.jpg" alt="bike9">
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
