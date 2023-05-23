@@ -16,15 +16,13 @@
         count++;
     }, 500);*/
     
-    setTimeout(function() {
-        rows[0].className = 'image-row show';
-    }, 2000);
+    rows[0].className = 'image-row show';
     setTimeout(function() {
         rows[1].className = 'image-row show';
-    }, 3000);
+    }, 1000);
     setTimeout(function() {
         rows[2].className = 'image-row show';
-    }, 4000);
+    }, 2000);
 
 
     /*for (const row of rows) {
