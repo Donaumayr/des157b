@@ -9,7 +9,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
     height: 180px;
@@ -45,7 +45,7 @@ h2 {
 }
 
 #lightbox {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     top:0;
     left:0;
@@ -54,7 +54,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -68,6 +68,27 @@ h2 {
     cursor: pointer;
 }
 
+#parent {
+    display: flex;
+}
+
+#x {
+    background-image: url(images/xbutton.svg);
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top:60px;
+    right:200px;
+    cursor: pointer;
+}
+
+#previous {
+    width:1200px;
+}
+
 #previous img{
     width:800px;
     height: 100px;
@@ -79,7 +100,7 @@ h2 {
 
 #current {
     width: 1000px;
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 #current img {
@@ -105,16 +126,35 @@ h2 {
     opacity: 0.3;
 }
 
+.oimg:first-of-type {
+    margin-top:100px;
+}
+
+.oimg {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
 .hidden {
-    opacity:0
+    opacity:0;
+    animation: disappear 0.5s ease-in forwards;
 }
 
 .show {
     opacity:1;
-    animation: appear 2s ease-out forwards;
+    animation: appear 0.5s ease-out forwards;
 }
 
 @keyframes appear {
     0% {opacity:0}
     100% {opacity:1}
+}
+
+@keyframes disappear {
+    0% {opacity:1}
+    100% {opacity:0}
 }

@@ -3,13 +3,16 @@
 
     window.dispatchEvent(new Event('resize'));
 
+    const gallery = document.querySelector('#gallery');
     const images = document.querySelectorAll('.gimg');
+    const images2 = document.querySelectorAll('.oimg');
     const rows = document.querySelectorAll('.image-row');
     const names = [];
     const box = document.querySelector('#lightbox');
     const previous = document.querySelector('#previous');
     const current = document.querySelector('#current');
     const next = document.querySelector('#next');
+    const close = document.querySelector('#x');
     let count = 0;
     /*setInterval(function() {
         rows[count].className = 'image-row show';
@@ -19,10 +22,10 @@
     rows[0].className = 'image-row show';
     setTimeout(function() {
         rows[1].className = 'image-row show';
-    }, 1000);
+    }, 500);
     setTimeout(function() {
         rows[2].className = 'image-row show';
-    }, 2000);
+    }, 1500);
 
 
     /*for (const row of rows) {
@@ -32,8 +35,8 @@
     }*/
 
     for(let i = 0; i < images.length; i++) {
-        images[i].addEventListener('mousedown', function(){
-            if (i >= 1) {
+        images[i].addEventListener('click', function(){
+            /*if (i >= 1) {
                 previous.innerHTML = `<img src="images/bike${i}.jpg">`;
             }else{
                 previous.innerHTML = '';
@@ -44,11 +47,22 @@
                 next.innerHTML = `<img src="images/bike${i + 2}.jpg">`;
             }else{
                 next.innerHTML = '';
-            }
+            }*/
+            //$(document).scrollTop(150 * i);
+            gallery.style.position = 'fixed';
             box.style.display = 'flex';
+            box.className = 'show';
+            images2[i].scrollIntoView();
         });
     }
 
+    close.addEventListener('click', function(){
+        gallery.style.position = '';
+        box.className = 'hidden';
+        setTimeout(function() {
+            box.style.display = 'none';
+        }, 500);
+    });
     /*for (const img of images) {
         img.addEventListener('mousedown', function(){
             count += 1;

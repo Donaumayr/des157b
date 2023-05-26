@@ -30,27 +30,47 @@
         </div>
     </header>
     <main>
-        <section id="lightbox">
-            <div id="previous"></div>
+        <section id="lightbox" class="hidden">
+            <div id="parent"><button id="x"></button></div>
+            <div data-aos="fade-up"><img class="oimg" src="images/bike1.jpg" alt="bike with bags"></div>
+            <div data-aos="fade-up"><img class="oimg" src="images/bike2.jpg" alt="bike"></div>
+            <div data-aos="fade-up"><img class="oimg" src="images/bike3.jpg" alt="bike"></div>
+            <div data-aos="fade-up"><img class="oimg" src="images/bike4.jpg" alt="bike"></div>
+            <div data-aos="fade-up"><img class="oimg" src="images/bike5.jpg" alt="bike"></div>
+            <img class="oimg" src="images/bike6.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike7.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike8.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike9.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike10.jpg" alt="bike9" data-aos="fade-up">
+        </section>
+        <!--<section id="lightbox" class="hidden">
+            <div id="parent"><div id="previous"></div><button id="x"></button></div>
             <div id="current"></div>
-            <div id="next"></div>
-        </section>
-        <section class="image-row hidden">
+            <div data-aos="fade-up" id="next"></div>
             <img class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
-            <img class="gimg" id="img2" src="images/bike2.jpg" alt="bike">
-            <img class="gimg" id="img3" src="images/bike3.jpg" alt="bike">
-        </section>
-        <section class="image-row hidden">
-            <img class="gimg" id="img4" src="images/bike4.jpg" alt="bike">
-            <img class="gimg" id="img5" src="images/bike5.jpg" alt="bike">
-            <img class="gimg" id="img6" src="images/bike6.jpg" alt="bike">
-            <img class="gimg" id="img7" src="images/bike7.jpg" alt="bike">
-        </section>
-        <section class="image-row hidden">
-            <img class="gimg" id="img8" src="images/bike8.jpg" alt="bike">
-            <img class="gimg" id="img9" src="images/bike9.jpg" alt="bike">
-            <img class="gimg" id="img10" src="images/bike10.jpg" alt="bike9">
-        </section>
+            <img class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
+            <img class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
+            <img class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
+        </section>-->
+        <!-- Overflow hidden or position fixed-->
+        <div id="gallery">
+            <section class="image-row hidden">
+                <img href="#img1" class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
+                <img class="gimg" id="img2" src="images/bike2.jpg" alt="bike">
+                <img class="gimg" id="img3" src="images/bike3.jpg" alt="bike">
+            </section>
+            <section class="image-row hidden">
+                <img class="gimg" id="img4" src="images/bike4.jpg" alt="bike">
+                <img class="gimg" id="img5" src="images/bike5.jpg" alt="bike">
+                <img class="gimg" id="img6" src="images/bike6.jpg" alt="bike">
+                <img class="gimg" id="img7" src="images/bike7.jpg" alt="bike">
+            </section>
+            <section class="image-row hidden">
+                <img class="gimg" id="img8" src="images/bike8.jpg" alt="bike">
+                <img class="gimg" id="img9" src="images/bike9.jpg" alt="bike">
+                <img class="gimg" id="img10" src="images/bike10.jpg" alt="bike9">
+            </section>
+        </div>
     </main>
     <footer>
 
