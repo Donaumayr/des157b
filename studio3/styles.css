@@ -158,3 +158,13 @@ h2 {
     0% {opacity:1}
     100% {opacity:0}
 }
+
+footer {
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
