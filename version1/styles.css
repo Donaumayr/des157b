@@ -160,7 +160,39 @@ h2 {
 }
 
 #intro {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    right: 0;;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 2;
+}
+#intro img {
+    width: 40%;
+    margin-right: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+}
+#intro div {
+    width: 40%;
+    margin-right: 15%;
+}
+#intro div h1 {
+    margin-bottom: 25px;
+}
+#intro div h3 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    opacity: 0.5;
+    font-size: 1.7em;
+}
+#intro div p {
+    line-height: 2em;
+    font-size: 1.3em;
 }
 
 #share {
