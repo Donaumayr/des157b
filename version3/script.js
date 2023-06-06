@@ -23,10 +23,6 @@
         count++;
     }, 500);*/
 
-    window.addEventListener('load', function(){
-        alert("Hello! Could you please try to view a photo, browse through other photos, and share a recent biking journey? If there is anything that was initially confusing to you or any steps that felt clunky or awkward, please tell me. Thank you!");
-    });
-
     document.querySelector('#form').addEventListener('submit', function(event){
         event.preventDefault();
 
