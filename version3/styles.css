@@ -195,6 +195,7 @@ h2 {
 #intro div p {
     line-height: 2em;
     font-size: 1.3em;
+    letter-spacing: 0.05em;
 }
 
 #share {

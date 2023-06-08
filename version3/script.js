@@ -177,6 +177,7 @@
     }, 1500);*/
 
     share.addEventListener('click', function(){
+        //window.resizeTo(window.screen.availWidth - 50, window.screen.availHeight);
         if(clicked == 0) {
             intro.className = 'hidden';
             body.style.overflow = 'visible';
