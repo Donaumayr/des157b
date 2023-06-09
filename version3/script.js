@@ -89,9 +89,11 @@
                 //const filename = eachPhoto.get('filename');
                 const post = document.createElement("div");
                 post.className = 'post';
-                post.setAttribute('data-aos', 'fade-up');
-                post.setAttribute('data-aos', 'fade-down');
-                post.setAttribute('data-aos-offset', '400');
+                if (count > 0) {
+                    post.setAttribute('data-aos', 'fade-up');
+                    post.setAttribute('data-aos', 'fade-down');
+                    post.setAttribute('data-aos-offset', '400');
+                }
                 post.innerHTML = `
                     <img class="oimg" src="${imageURL}">
                     <h1>${name}</h1>
@@ -106,6 +108,13 @@
                     gallery.innerHTML += '<section class="image-row"></section>';
                 }
                 const rows = document.querySelectorAll('.image-row');
+                
+                /*let nimg = new Image();
+                nimg.onload = function() {
+                    nimg.className = 'gimg';
+                    rows[rows.length - 1].appendChild(nimg);
+                }
+                nimg.src = `${imageURL}`;*/
                 let photo = document.createElement("img");
                 photo.className = 'gimg';
                 photo.src = `${imageURL}`;
@@ -138,15 +147,16 @@
             close = document.querySelector('#x');
             close.addEventListener('click', function(){
                 window.scrollTo(0,0);
-                arrpost[0].style.opacity = '0';
+                console.log(arrpost[0]);
+                arrpost[0].style.opacity = '0.0';
                 gallery.className = ''
                 box.className = 'hidden';
-                window.dispatchEvent(new Event('resize'));
+                //window.dispatchEvent(new Event('resize'));
                 setTimeout(function() {
                     box.style.display = 'none';
                     arrpost[0].style.opacity = '1';
                     share.className = 'show';
-                }, 500);
+                }, 1000);
             });
             /*for(let i = 0; i < images.length; i++) {
                 images[i].addEventListener('click', function(){
@@ -189,11 +199,24 @@
         }else{
             gallery.className = 'fix';
             body.style.overflow = 'hidden';
-            window.dispatchEvent(new Event('resize'));
+            //window.dispatchEvent(new Event('resize'));
             upload.style.display = 'flex';
             upload.className = 'show';
             share.style.display = 'none'
         }
+    });
+
+    document.querySelector('#x2').addEventListener('click', function(){
+        resetFormFields();
+        share.style.display = 'block';
+        upload.className = 'hidden'
+        gallery.className = '';
+        body.style.overflow = 'visible';
+        //window.dispatchEvent(new Event('resize'));
+        resetFormFields();
+        setTimeout(() => {
+            upload.style.display = 'none';
+        }, 1000);
     });
 
     // Helper Functions
