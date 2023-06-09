@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gallery Library-->
+    <link rel="stylesheet" href="imagerow.js-master/css/imagerow.css">
+    <script src="imagerow.js-master/dist/imagerow.min.js"></script>
+
+    <!-- Animate on Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Tinos:wght@400;700&family=Gelasio:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Davis, CA</h1>
+        <div id="highlight">
+            <div class="line"></div>
+            <h2>Bicyclists</h2>
+            <div class="line"></div>
+        </div>
+    </header>
+    <main>
+        <section id="upload" class="hidden">
+            
+            <form id="form">
+                <label for="name">NAME YOUR JOURNEY</label>
+                <input type="text" id="name">
+
+                <label for="fileupload">UPLOAD A PHOTO</label>
+                <input type="file" id="fileupload">
+
+                <label for="location">LOCATION</label>
+                <input type="text" id="location">
+
+                <label for="bicycle">BICYCLE TYPE</label>
+                <input type="text" id="bicycle">
+
+                <label for="description">DESCRIBE YOUR JOURNEY</label>
+                <textarea id="description" cols="50" rows ="5"></textarea>
+
+                <button id="submit" type="submit">Share your Journey</button>
+                <!-- <input type="submit" value="share your journey"> -->
+            </form>
+            <button id="x2"></button>
+        </section>
+        <section id="intro">
+            <img src="images/slice1.png" alt="seal">
+            <div>
+                <h1>Bicycling Journeys</h1>
+                <h3>Davis, CA</h3>
+                <p>To honor the <strong>Davis Centennial Seal</strong> by Artist Susan Shelton, this site is designed as a platform for Davis residents to share photos of journeys they’ve take with their bikes. </p>
+                <p>The hope of this project is to continue the city's storied history with bikes, from being the first city in the United States to introduce bike lanes to having one of the highest numbers of bikes per capita in the nation.</p>
+            </div>
+        </section>
+        <section id="lightbox" class="hidden">
+            <button id="x"></button>
+            <!--<div><img class="oimg" src="images/bike1.jpg" alt="bike with bags"></div>
+            <div><img class="oimg" src="images/bike2.jpg" alt="bike"></div>
+            <div><img class="oimg" src="images/bike3.jpg" alt="bike"></div>
+            <div><img class="oimg" src="images/bike4.jpg" alt="bike"></div>
+            <div><img class="oimg" src="images/bike5.jpg" alt="bike"></div>
+            <img class="oimg" src="images/bike6.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike7.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike8.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike9.jpg" alt="bike" data-aos="fade-up">
+            <img class="oimg" src="images/bike10.jpg" alt="bike9" data-aos="fade-up">-->
+        </section>
+        
+        <!-- Overflow hidden or position fixed-->
+        <button id="share">Share your Journey</button>
+        <div id="gallery">
+            <!--<section class="image-row">
+                <img class="gimg" id="img1" src="images/bike1.jpg" alt="bike with bags">
+                <img class="gimg" id="img2" src="images/bike2.jpg" alt="bike">
+                <img class="gimg" id="img3" src="images/bike3.jpg" alt="bike">
+            </section>
+            <section class="image-row">
+                <img class="gimg" id="img4" src="images/bike4.jpg" alt="bike">
+                <img class="gimg" id="img5" src="images/bike5.jpg" alt="bike">
+                <img class="gimg" id="img6" src="images/bike6.jpg" alt="bike">
+                <img class="gimg" id="img7" src="images/bike7.jpg" alt="bike">
+            </section>
+            <section class="image-row">
+                <img class="gimg" id="img8" src="images/bike8.jpg" alt="bike">
+                <img class="gimg" id="img9" src="images/bike9.jpg" alt="bike">
+                <img class="gimg" id="img10" src="images/bike10.jpg" alt="bike9">
+            </section>-->
+        </div>
+    </main>
+    <footer>
+        <p>Made with <a href="https://www.cssscript.com/responsive-photo-grid-vanilla-javascript-imagerow-js/">Imagerow</a> and <a href="https://michalsnik.github.io/aos/">Animate on Scroll</a> libraries.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js" defer></script>
+</body>
+</html>
